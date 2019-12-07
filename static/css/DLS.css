@@ -1,0 +1,149 @@
+.header
+{
+letter-spacing: 3px;
+text-align: center;
+background-color:#;
+font-family: cambria;
+padding-bottom: 30px;
+padding-left: 2px;
+padding-right: 2px;
+
+}
+.header h1
+{
+  color: #264f73;
+  text-decoration: underline;
+  font-size: 30px;
+
+}
+.nav
+{ text-align: center;
+  border-radius: 0px;
+  margin:auto;
+  padding-bottom: 20px;
+  padding-top: 8px;
+  background-color:#dddad8;
+  color: white;
+}
+.btn:hover
+{
+  color:#4caf50;
+  background-color: white;
+}
+.edit:hover
+{
+
+  color:white;
+  background-color: green;
+}
+.delete:hover
+{
+  color:white;
+  background-color: red;
+}
+
+.main
+{
+  text-align: center;
+  background-color:white;
+  font-family: calibri;
+  padding-bottom: 20px;
+  padding-top: 2px;
+  margin: auto;
+  margin-top: 2px;
+  border: solid 5px lightgrey;
+  border-left:solid 30px #f7f6e7;
+  border-right: solid 30px #f7f6e7;
+
+}
+.main table
+{
+  width: 100%;
+  text-align: center;
+  color:#4caf50;
+}
+.main table th
+{
+
+  background-color: #4caf50;
+  color:white;
+
+}
+.main table td
+{
+  color: black;
+  font-family:times new roman;
+
+
+}
+}
+body
+{
+  background-color:#f7f6e7;
+}
+form
+{
+  align-items: center;
+  width :100px
+  border 1px solid #4caf50;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.nav a
+{
+
+  border: 1px solid #264f73;
+  text-decoration: none;
+  color: #ffffff;
+  background-color:#4caf50;
+  width:150%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h2
+{
+  font-family: constantia;
+  color: #023346;
+}
+a
+{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  background-color: #ffffff;
+  width: 150%;
+  border: 1px solid #264f73;
+  padding-left: 10px;
+  display: inline;
+  padding-right: 10px;
+
+
+}
+.c1
+{
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+.input
+{
+ border-radius:;
+ color: white;
+ background-color: #4caf50;
+ width: 8%;
+ cursor:pointer;
+ text-align: center;
+ margin-top: 20px;
+ font-size: 15px;
+}
+.input:hover
+{
+  color:white;
+  background-color: green;
+}
+#logout:hover
+{
+  color:white;
+  background-color: red;
+}

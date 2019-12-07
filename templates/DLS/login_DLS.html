@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login | DLS</title>
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+  </head>
+  <body>
+    <div class="login-box">
+      <h1>Library</h1>
+    <div class="text-box">
+    <form   method="post">
+      {% csrf_token %}
+      <input type="text" placeholder="username" name="username" value="">
+    </div>
+    <div class="text-box">
+      <input type="password" placeholder="password" name="password" value="">
+    </div >
+      <input class="btn" type="submit"  name="" value="login">
+
+    </form>
+    {{error}}
+  </div>
+  </body>
+</html>

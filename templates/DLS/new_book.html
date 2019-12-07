@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add Book | DLS</title>
+    <link rel="stylesheet"  href="{%static '/css/DLS.css'%}"
+  </head>
+  <body>
+    <div class="header">
+      <h1>LIbrary Digital System</h1>
+      <div class="nav">
+        <a class='btn' href="/DLS/view-books">View</a>
+        <!--<a class='btn' href="/DLS/edit-books">Edit</a> -->
+        <a class='btn' href="/DLS/search-books">Search</a>
+      </div>
+
+    </div>
+    <div class="main">
+    <h2>Add New Book</h2>
+      <form class="" action="/DLS/add" method="post">
+        {%csrf_token%}
+        {{form}}
+        <br>
+        <input class='input' type="submit" name="" value="add">
+      </form>
+    </div>
+  </body>
+</html>

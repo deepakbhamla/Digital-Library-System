@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="{%static '/css/DLS.css'%}"
+    <title>Search | DLS</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Library Digital System</h1>
+      <div class="nav">
+        <a class='btn' href="/DLS/view-books">View</a>
+    <!--    <a class='btn' href="/DLS/edit-books">Edit</a> -->
+        <a class='btn' href="/DLS/new-books">Add</a>
+      </div>
+    </div>
+  <div class="main">
+    <h2>Search</h2>
+    <form class='form1' action="/DLS/search" method="post">
+      {%csrf_token%}
+      {{form}}
+      <br>
+      <input class='input' type="submit" name="" value="search">
+    </form>
+    {% if book %}
+    <table>
+      <thead>
+        <th>title</th>
+        <th>auther</th>
+        <th>publisher</th>
+        <th>price</th>
+        <th>copy</th>
+      </thead>
+    {% endif %}
+    {%for books in book %}
+    <tr>
+      <td>{{books.title}}</td>
+      <td>{{books.auther}}</td>
+      <td>{{books.publisher}}</td>
+      <td>{{books.price}}</td>
+      <td>{{books.copy}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  </div>
+  </body>
+</html>
